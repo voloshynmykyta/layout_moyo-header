@@ -1,16 +1,14 @@
-@import 'https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap';
-
 html {
-  --hover-color: #00acdc;
+  --color-blue: #00acdc;
 }
 
 body {
   margin: 0;
-  font-family: Roboto, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   font-size: 12px;
 }
 
-.header_container {
+.header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -37,16 +35,20 @@ body {
 }
 
 .nav__link:hover {
-  color: var(--hover-color);
+  color: var(--color-blue);
 }
 
 .nav__list li:first-child .nav__link {
   margin-left: 0;
 }
 
+.nav__list li:last-child .nav__link {
+  margin-right: 0;
+}
+
 .is-active {
   position: relative;
-  color: var(--hover-color);
+  color: var(--color-blue);
 }
 
 .is-active::after {
@@ -56,10 +58,6 @@ body {
   height: 4px;
   left: 0;
   bottom: 0;
-  background-color: var(--hover-color);
+  background-color: var(--color-blue);
   border-radius: 8px;
-}
-
-.logo {
-  display: inline;
 }
